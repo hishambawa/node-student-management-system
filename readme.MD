@@ -4,6 +4,6 @@ A Node application for a Student Management System with CRUD operations, created
 
 ## Running the Application
 
-Start the server using the command below and access the application from `localhost:3000`
+Start the server using the command below and access the application from `localhost:8080`
 
 `npm start`
