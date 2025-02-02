@@ -1,10 +1,15 @@
 const express = require('express');
+const cors = require('cors')
+
 const MongoRepository = require('./repository/mongoRepo');
 const StudentDao = require('./repository/studentDao');
 const addHandlers = require('./handlers/studentHandler');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// add middleware to enable CORS
+app.use(cors());
 
 // add middleware parse request body as JSON
 app.use(express.json());
