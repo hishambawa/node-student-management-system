@@ -7,7 +7,7 @@ class StudentDao {
         const successful = await this.mongoRepo.insert(student);
 
         if(successful) {
-            return this.createResponse(200, 'Successfully created the student', student);
+            return this.createResponse(200, 'Successfully added the student', student);
         } else {
             return this.createResponse(500, 'An error occurred while creating the student', null);
         }
