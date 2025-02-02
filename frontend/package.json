@@ -1,0 +1,16 @@
+{
+  "name": "student-management-system-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bulma-toast": "2.4.4",
+    "express": "4.21.2"
+  }
+}
