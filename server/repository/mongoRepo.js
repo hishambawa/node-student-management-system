@@ -1,7 +1,7 @@
 const {MongoClient, ObjectId} = require('mongodb');
 
 class MongoRepository {
-    constructor() {
+    async init() {
         // get the db client
         const url = process.env.DB_URL || '';
         const client = new MongoClient(url);

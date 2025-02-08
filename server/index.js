@@ -28,6 +28,7 @@ app.use((err, req, res, next) => {
 
 // create the database repository
 const mongoRepo = new MongoRepository();
+mongoRepo.init();
 
 // create the DAO
 const studentDao = new StudentDao(mongoRepo);
